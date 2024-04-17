@@ -1,0 +1,19 @@
+body, .contact-us-bg {
+    background-image: url(../img/bg-dark.png);
+}
+
+.dark {
+    color: #fff !important;
+}
+
+.loader path {
+    stroke: #fff !important;
+}
+
+.light-blue {
+    color: #0000E8 !important;
+}
+
+.cardd::after {
+    background-color: grey;
+}

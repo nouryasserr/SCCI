@@ -1,0 +1,88 @@
+.contact-us-bg {
+  background-image: url("../img/background.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat; }
+  .contact-us-bg .contact-us a {
+    color: inherit; }
+  .contact-us-bg .contact-us textarea {
+    resize: none; }
+  .contact-us-bg .contact-us .contact-subheading {
+    font-family: 'Roboto', sans-serif;
+    /* Corrected font-family name */
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 600; }
+  .contact-us-bg .contact-us .scci-breif {
+    font-family: 'Roboto', sans-serif;
+    /* Corrected font-family name */
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 600; }
+  .contact-us-bg .contact-us .contact-form-heading {
+    font-family: 'Dancing Script', cursive; }
+    .contact-us-bg .contact-us .contact-form-heading::after {
+      content: 'SCCI';
+      position: absolute;
+      left: 50%;
+      top: 30%;
+      transform: translate(-50%, -50%);
+      opacity: 0.1;
+      font-size: 70px;
+      width: 100%;
+      font-family: 'Work Sans', sans-serif; }
+  .contact-us-bg .map iframe {
+    filter: invert(100%); }
+  .contact-us-bg .map .location-title {
+    font-family: 'poppins', 'sans-serif';
+    font-weight: 600; }
+
+/*# sourceMappingURL=contact.css.map */
+.navbar {
+  background-color: #00005B;
+}
+
+.nav-link {
+  color: #c5c5c5;
+  font-size: 18px;
+  white-space: nowrap;
+}
+
+.nav-link:hover {
+  color: white;
+}
+
+#navButtonContainer a {
+  border: 2px solid #c52525;
+}
+
+#navButtonContainer a:hover {
+  background-color: #c52525;
+  color: white;
+}
+
+.navbar-toggler {
+  border: 2px solid white;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+@media (max-width: 1050px) and (min-width: 992px) {
+  #navContainer {
+      padding: 0 1rem !important;
+  }
+}
+
+@media (min-width: 992px) {
+  #navButtonContainer::before {
+      content: "";
+      position: relative;
+      width: 1.5px;
+      height: 1.7rem;
+      background-color: #c5c5c5;
+      top: 10px;
+      left: -25px;
+      cursor: none;
+  }
+}

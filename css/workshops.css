@@ -1,0 +1,419 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+   align-content: center; 
+  gap: 2rem;
+  /* padding: 24px; */
+  /* background-color: lightgray; */
+  background: url(../imgs/background.png);
+}
+
+h1 {
+  text-align: center;
+  /* color: #036fca; */
+}
+
+ol {
+ /* width: min(60rem, 90%); */
+  margin: 60px auto;
+  display: flex;
+  flex-wrap:wrap;
+   gap: 5rem;  
+  justify-content: center;
+}
+
+li.devo {
+  --frontColor: white;
+  --width: 10em;
+  --inlineP: 0.5rem;
+  --borderR: 4rem;
+  --arrowW: 2rem;
+  --arrowH: 1.5rem;
+ 
+  display: grid;
+  grid-template:
+    "icon" var(--borderR)
+    "title"
+    "descr" 1fr;
+  margin-inline: var(--inlineP);
+  margin-bottom: calc(var(--borderR));
+  position: relative;
+}
+li.devo .icon {
+  background: white;
+  padding:0px 16px;
+  padding-bottom: 16px;
+}
+li.devo .icon {
+  border-radius:80px 0px 0px 0px;
+}
+li.devo .descr::before {
+  content: "";
+  width: var(--arrowW);
+  height: var(--arrowH);
+  position: absolute;
+  right: 24px;
+  top:200%;
+  background: white;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+ li.devo .img{
+    border-radius: 0px 0px 10px 0px;
+ }
+ 
+
+
+
+
+ 
+li.app {
+  --frontColor: white;
+  --width: 10em;
+  --inlineP: 0.5rem;
+  --borderR: 4rem;
+  --arrowW: 2rem;
+  --arrowH: 1.5rem;
+ 
+  display: grid;
+  grid-template:
+    "icon" var(--borderR)
+    "title"
+    "descr" 1fr;
+  margin-inline: var(--inlineP);
+  margin-bottom: calc(var(--borderR));
+  position: relative;
+}
+li.app .icon {
+  background: white;
+  padding:0px 16px;
+  padding-bottom: 16px;
+}
+
+    
+
+li.app .icon {
+  border-radius:80px 0px 0px 0px;
+}
+
+
+li.app .descr::before {
+  content: "";
+  width: var(--arrowW);
+  height: var(--arrowH);
+  position: absolute;
+  right: 24px;
+  top:200%;
+  background: white;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+ li.app .img{
+    border-radius: 0px 0px 10px 0px;
+ }
+ 
+ 
+li.app::after {
+  content: counter(cardnr);
+  position: absolute;
+  z-index: -999;
+  left: calc(var(--inlineP) * -1);
+  right: calc(var(--inlineP) * -1);
+  top: var(--borderR);
+  bottom: calc(var(--borderR) * -1);
+  display: flex;
+  background: #036fca;
+ border-radius: 0px 0px 65px 0px;
+
+background-image: linear-gradient
+(160deg,rgba(255, 255, 255, 0.25),transparent 25% 75%, rgba(0, 0, 0, 0.25) );
+  --pad: 1rem;
+  padding: var(--pad);
+}
+li.app::before {
+  content: "";
+  position: absolute;
+  height: var(--borderR);
+  top: calc(100% + var(--borderR) - 2px);
+  left: calc(var(--inlineP) * -1);
+  right: calc(var(--inlineP) * -1);
+  border-radius: 0px 65px 0px 0px;   
+  background-image: linear-gradient( #036fca ,transparent 65%);
+  opacity: 0.5;
+  filter: blur(2px);
+ 
+}
+
+.devoo{
+  color: rgb(150, 51, 242) ;
+}
+li.devo::after {
+  content: counter(cardnr);
+  position: absolute;
+  z-index: -999;
+  left: calc(var(--inlineP) * -1);
+  right: calc(var(--inlineP) * -1);
+  top: var(--borderR);
+  bottom: calc(var(--borderR) * -1);
+  display: flex;
+  background:#913e97;
+ border-radius: 0px 0px 65px 0px;
+
+background-image: linear-gradient
+(160deg,rgba(255, 255, 255, 0.25),transparent 25% 75%, rgba(0, 0, 0, 0.25) );
+  --pad: 1rem;
+  padding: var(--pad);
+}
+li.devo::before {
+  content: "";
+  position: absolute;
+  height: var(--borderR);
+  top: calc(100% + var(--borderR) - 2px);
+  left: calc(var(--inlineP) * -1);
+  right: calc(var(--inlineP) * -1);
+  border-radius: 0px 65px 0px 0px;   
+  background-image: linear-gradient( rgb(150, 51, 242) ,transparent 65%);
+  opacity: 0.5;
+  filter: blur(2px);
+ 
+}
+
+
+li.inv {
+  --frontColor: white;
+  --width: 10em;
+  --inlineP: 0.5rem;
+  --borderR: 4rem;
+  --arrowW: 2rem;
+  --arrowH: 1.5rem;
+ 
+  display: grid;
+  grid-template:
+    "icon" var(--borderR)
+    "title"
+    "descr" 1fr;
+  margin-inline: var(--inlineP);
+  margin-bottom: calc(var(--borderR));
+  position: relative;
+}
+li.inv .icon {
+  background: white;
+  padding:0px 16px;
+  padding-bottom: 16px;
+}
+li.inv .icon {
+  border-radius:80px 0px 0px 0px;
+}
+li.inv .descr::before {
+  content: "";
+  width: var(--arrowW);
+  height: var(--arrowH);
+  position: absolute;
+  right: 24px;
+  top:200%;
+  background: white;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+ li.inv .img{
+    border-radius: 0px 0px 10px 0px;
+ }
+ 
+
+.invv{
+  color:  rgb(10, 136, 10) ;
+}
+li.inv::after {
+  content: counter(cardnr);
+  position: absolute;
+  z-index: -999;
+  left: calc(var(--inlineP) * -1);
+  right: calc(var(--inlineP) * -1);
+  top: var(--borderR);
+  bottom: calc(var(--borderR) * -1);
+  display: flex;
+  background: rgb(10, 136, 10);
+ border-radius: 0px 0px 65px 0px;
+
+background-image: linear-gradient
+(160deg,rgba(255, 255, 255, 0.25),transparent 25% 75%, rgba(0, 0, 0, 0.25) );
+  --pad: 1rem;
+  padding: var(--pad);
+}
+li.inv::before {
+  content: "";
+  position: absolute;
+  height: var(--borderR);
+  top: calc(100% + var(--borderR) - 2px);
+  left: calc(var(--inlineP) * -1);
+  right: calc(var(--inlineP) * -1);
+  border-radius: 0px 65px 0px 0px;   
+  background-image: linear-gradient( rgb(10, 136, 10),transparent 65%);
+  opacity: 0.5;
+  filter: blur(2px);
+ 
+}
+
+
+li.markative {
+  --frontColor: white;
+  --width: 10em;
+  --inlineP: 0.5rem;
+  --borderR: 4rem;
+  --arrowW: 2rem;
+  --arrowH: 1.5rem;
+ 
+  display: grid;
+  grid-template:
+    "icon" var(--borderR)
+    "title"
+    "descr" 1fr;
+  margin-inline: var(--inlineP);
+  margin-bottom: calc(var(--borderR));
+  position: relative;
+}
+li.markative .icon {
+  background: white;
+  padding:0px 16px;
+  padding-bottom: 16px;
+}
+
+    
+
+li.markative .icon {
+  border-radius:80px 0px 0px 0px;
+}
+
+
+li.markative .descr::before {
+  content: "";
+  width: var(--arrowW);
+  height: var(--arrowH);
+  position: absolute;
+  right: 24px;
+  top:200%;
+  background: white;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+ li.markative .img{
+    border-radius: 0px 0px 10px 0px;
+ }
+ 
+.markk{
+  color: rgb(233, 17, 17);
+
+}
+li.markative::after {
+  content: counter(cardnr);
+  position: absolute;
+  z-index: -999;
+  left: calc(var(--inlineP) * -1);
+  right: calc(var(--inlineP) * -1);
+  top: var(--borderR);
+  bottom: calc(var(--borderR) * -1);
+  display: flex;
+  background: rgb(233, 17, 17);
+ border-radius: 0px 0px 65px 0px;
+
+background-image: linear-gradient
+(160deg,rgba(255, 255, 255, 0.25),transparent 25% 75%, rgba(0, 0, 0, 0.25) );
+  --pad: 1rem;
+  padding: var(--pad);
+}
+li.markative::before {
+  content: "";
+  position: absolute;
+  height: var(--borderR);
+  top: calc(100% + var(--borderR) - 2px);
+  left: calc(var(--inlineP) * -1);
+  right: calc(var(--inlineP) * -1);
+  border-radius: 0px 65px 0px 0px;   
+  background-image: linear-gradient(rgb(233, 17, 17),transparent 65%);
+  opacity: 0.5;
+  filter: blur(2px);
+ 
+}
+
+.techh{
+  color:#dbbf07;
+}
+li.tech::after {
+  content: counter(cardnr);
+  position: absolute;
+  z-index: -999;
+  left: calc(var(--inlineP) * -1);
+  right: calc(var(--inlineP) * -1);
+  top: var(--borderR);
+  bottom: calc(var(--borderR) * -1);
+  display: flex;
+  background:#dbbf07;
+ border-radius: 0px 0px 65px 0px;
+
+background-image: linear-gradient
+(160deg,rgba(255, 255, 255, 0.25),transparent 25% 75%, rgba(0, 0, 0, 0.25) );
+  --pad: 1rem;
+  padding: var(--pad);
+}
+li.tech::before {
+  content: "";
+  position: absolute;
+  height: var(--borderR);
+  top: calc(100% + var(--borderR) - 2px);
+  left: calc(var(--inlineP) * -1);
+  right: calc(var(--inlineP) * -1);
+  border-radius: 0px 65px 0px 0px;   
+  background-image: linear-gradient(#dbbf07,transparent 65%);
+  opacity: 0.5;
+  filter: blur(2px);
+ 
+}
+
+
+ 
+li.tech {
+  --frontColor: white;
+  --width: 10em;
+  --inlineP: 0.5rem;
+  --borderR: 4rem;
+  --arrowW: 2rem;
+  --arrowH: 1.5rem;
+ 
+  display: grid;
+  grid-template:
+    "icon" var(--borderR)
+    "title"
+    "descr" 1fr;
+  margin-inline: var(--inlineP);
+  margin-bottom: calc(var(--borderR));
+  position: relative;
+}
+li.tech .icon {
+  background: white;
+  padding:0px 16px;
+  padding-bottom: 16px;
+}
+
+    
+
+li.tech .icon {
+  border-radius:80px 0px 0px 0px;
+}
+
+
+li.tech .descr::before {
+  content: "";
+  width: var(--arrowW);
+  height: var(--arrowH);
+  position: absolute;
+  right: 24px;
+  top:200%;
+  background: white;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+ li.tech .img{
+    border-radius: 0px 0px 10px 0px;
+ }
+ 

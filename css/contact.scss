@@ -1,0 +1,63 @@
+.contact-us-bg {
+    background-image: url('../images/Screenshot 2023-12-11 161456.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    .contact-us {
+        a {
+            color: inherit;
+        }
+
+
+        textarea {
+            resize: none;
+        }
+
+        .contact-subheading {
+            font-family: 'Roboto', sans-serif;
+            /* Corrected font-family name */
+            font-size: 24px;
+            line-height: 24px;
+            font-weight: 600;
+        }
+
+        .scci-breif {
+            font-family: 'Roboto', sans-serif;
+            /* Corrected font-family name */
+            font-size: 18px;
+            line-height: 28px;
+            font-weight: 600;
+        }
+
+        .contact-form-heading {
+            font-family: 'Dancing Script', cursive;
+
+            &::after {
+                content: 'SCCI';
+                position: absolute;
+                left: 50%;
+                top: 30%;
+                transform: translate(-50%, -50%);
+                opacity: 0.1;
+                font-size: 70px;
+                width: 100%;
+                font-family: 'Work Sans', sans-serif;
+            }
+        }
+    }
+
+    .map {
+        iframe {
+            filter: invert(100%);
+        }
+
+        .location-title {
+            font-family: 'poppins', 'sans-serif';
+            font-weight: 600;
+
+        }
+
+    }
+
+
+
+}
